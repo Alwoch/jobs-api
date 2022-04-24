@@ -1,5 +1,6 @@
 const User = require("../models/User");
 const { BadRequestError, UnauthenticatedError } = require("../errors");
+const jwt=require('jsonwebtoken');
 
 const authentication = async (req, res, next) => {
   //check header
